@@ -1,0 +1,51 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: sans-serif; 
+} 
+ 
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+input { 
+    border: 1px solid #6e1a9e; 
+    outline: none; 
+    background: #9358b9; 
+    padding: 8px 25px; 
+    border-radius: 30px 0 0 30px; 
+} 
+ 
+input::placeholder { 
+    color: white; 
+} 
+ 
+button { 
+    padding: 8px 15px; 
+    border-radius: 0 30px 30px 0; 
+    border: 1px solid #6e1a9e; 
+    background: #9358b9; 
+    color: white; 
+    margin-left: -20px; 
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+  button {
+    width: 90px;
+    height: 40px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
